@@ -1,23 +1,22 @@
 import React from 'react';
 import { Route, Switch, withRouter} from 'react-router-dom';
+import Home from "./components/Home/Home"
 import Layout from './utilities/layout/Layout';
 import './App.css';
 
 
 const App = () => {
-  // let routes = (
-  //   <Switch>
-  //            <Route exact path='/services' component={Services}/>
+  let routes = (
+    <Switch>
+             {/* <Route exact path='/services' component={Services}/> */}
 
-  //     <Route exact path='/' component={Home}/>
-  //     {/* <Route exact path='/meetthechef' component={About}/>      
-  //      */}
-  //   </Switch>
-  // )
+      <Route exact path='/' component={Home}/>
+    </Switch>
+  )
   return (
     <div className="App">
       <Layout>
-        {/* {routes} */}
+        {routes}
       </Layout>
     </div>
   );

@@ -1,10 +1,10 @@
 import React from "react";
 import {withRouter} from "react-router-dom";
-import ScrollAnimation from 'react-animate-on-scroll';
+import ScrollAnimation from "react-animate-on-scroll";
 import { Grid } from "@material-ui/core";
 import { makeStyles } from '@material-ui/core/styles';
 import HomeImage from "./../../../assets/images/todd-kent-178j8tJrNlc-unsplash.jpg";
-import {white, greenColor} from "./../../GlobalStyles/styles";
+import {white, accentColor} from "./../../../global-styles/global-styles";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: "center",
     },
     home: {
-        border: `3px solid ${greenColor}`,
+        border: `3px solid ${accentColor}`,
         height: 200,
         display: "flex",
         flexDirection: "column",
