@@ -46,11 +46,15 @@ const useStyles = makeStyles((theme) => ({
         width: "11%",
         justifyContent: "space-between",
         fontStyle: "normal",
+        [theme.breakpoints.down('sm')]: {
+          fontSize: "1rem",
+          // border: "1px solid orange",
+          width: "35%",
+          flexDirection: "column",
+      },
         [theme.breakpoints.down('xs')]: {
           fontSize: ".8rem",
           // border: "1px solid white",
-          width: "35%",
-          flexDirection: "column",
       },
     },
     address: {
