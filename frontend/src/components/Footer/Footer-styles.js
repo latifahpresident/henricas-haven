@@ -7,6 +7,7 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: `${darkColor}`,
         display: "flex",
         justifyContent: "center",
+        alignItems: "center",
         // border: "2px solid teal",
         padding: 0,
         overflow: "hidden",
@@ -17,7 +18,8 @@ const useStyles = makeStyles((theme) => ({
           
         },
         [theme.breakpoints.down('xs')]: {
-          height: 74,
+          height: 94,
+          marginTop: "1rem",
       },
     },
     menu: {
@@ -49,6 +51,12 @@ const useStyles = makeStyles((theme) => ({
           // border: "1px solid white",
           width: "35%",
           flexDirection: "column",
+      },
+    },
+    address: {
+      width: "25%",
+      [theme.breakpoints.down('xs')]: {
+        width: "30%"
       },
     },
     span: {

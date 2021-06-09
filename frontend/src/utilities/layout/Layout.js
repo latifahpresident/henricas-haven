@@ -7,7 +7,7 @@ const Layout = (props) => {
     return (
         <React.Fragment>
             <Navigation/>
-             <main style={{width: "100%",}}>
+             <main style={{width: "100%", overflow: "hidden"}}>
                 {props.children}
             </main>
             <Footer/>

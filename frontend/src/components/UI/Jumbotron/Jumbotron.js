@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
     },
     wrapper: {
         position: "absolute",
-        background: "rgb(50 19 60 / 60%)",
+        background: "rgb(63 132 181 / 50%)",
         zIndex: 2,
         // border: "5px solid red",
         width: "100%",
