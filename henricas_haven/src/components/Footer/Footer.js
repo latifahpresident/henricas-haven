@@ -10,6 +10,7 @@ const Footer = props => {
                 <Grid className={classes.menu}>
                     <address className={`${classes.a} ${classes.address}`} ><HomeWorkOutlined className={classes.icon}/> <span className={classes.icon}/> <span className={classes.span}>6700 Alexander Bell Drive Ste 200</span></address>
                     <a className={classes.a} href="https://www.facebook.com/"><Facebook className={classes.icon}/> <span className={classes.icon}/> <span className={classes.span}>Henrica's Haven</span></a>
+                    <a href = "mailto: info@henricashaven.com">info@henricashaven.com</a>
                     <a className={classes.a} href="tel:1-410-926-9500"><Phone className={classes.icon}/> <span className={classes.span}>410 926 9500</span></a>
                 </Grid>
             </footer>
