@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
       flexDirection: "column",
       alignItems: "center",
       justifyContent: "space-around",
-      border: "1px solid black",
+    //   border: "1px solid black",
     //   marginBottom: "2rem",
       [theme.breakpoints.down('lg')]: {
         // border: "1px solid hotpink",
@@ -41,20 +41,21 @@ const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.down('sm')]: {
             width: "100%",
             // border: "1px solid silver",
+            
         },
     },
   
-    wrapper: {
-        display: "flex",
-        alignItems: "stretch",
-        justifyContent: "space-between",
-        // border: "2px solid hotpink",
-        [theme.breakpoints.down('sm')]: {
-            flexDirection: "column",
-            width: "100%",
-            margin: "0 auto",
-        },
-    },
+    // wrapper: {
+    //     display: "flex",
+    //     alignItems: "stretch",
+    //     justifyContent: "space-between",
+    //     // border: "2px solid hotpink",
+    //     [theme.breakpoints.down('sm')]: {
+    //         flexDirection: "column",
+    //         width: "100%",
+    //         margin: "0 auto",
+    //     },
+    // },
 
     h4: {
         color: `${accentColor}`,
@@ -78,7 +79,7 @@ const useStyles = makeStyles((theme) => ({
         },
         [theme.breakpoints.down('xs')]: {
             fontSize: 28,
-            alignSelf: "flex-start"
+            alignSelf: "center"
         },
     },
     p: {
@@ -112,6 +113,7 @@ const useStyles = makeStyles((theme) => ({
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
+        marginBottom: "5rem",
         // position: "relative",
         boxShadow: "0px 0px 24px rgba(0, 0, 0, 0.1)",
         // marginRight: "3rem",

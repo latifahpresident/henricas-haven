@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
           
         },
         [theme.breakpoints.down('xs')]: {
-          height: 94,
+          height: 250,
           marginTop: "1rem",
       },
     },
@@ -30,6 +30,7 @@ const useStyles = makeStyles((theme) => ({
         width: "100%",
         [theme.breakpoints.down('xs')]: {
           justifyContent: "space-between",
+          flexDirection: "column",
       },
     },
   

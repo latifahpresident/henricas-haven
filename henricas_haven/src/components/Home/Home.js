@@ -2,6 +2,8 @@ import React from "react";
 import CallToActionBtn from "./../UI/Button/Button"
 import { Typography, } from "@material-ui/core";
 import { useStyles } from "./Home-styles";
+import About from "./About/About";
+import Services from "./Services/Services";
 
 const Home = (props) => {
     const classes = useStyles(props);
@@ -15,8 +17,9 @@ const Home = (props) => {
                     Call Now
                 </CallToActionBtn>
             </header>
-            <div className={classes.imgWrapper}> 
-            </div>
+            <div className={classes.imgWrapper}> </div>
+            <About/>
+            <Services/>
         </article>
     )
 };

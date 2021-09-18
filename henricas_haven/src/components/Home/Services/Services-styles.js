@@ -1,5 +1,5 @@
 import { makeStyles } from '@material-ui/core/styles';
-import HomeImage from "./../../../assets/images/todd-kent-178j8tJrNlc-unsplash.jpg";
+import HomeImage from "./../../../assets/images/christina-wocintechchat-com-vzfgh3RAPzM-unsplash.jpg";
 import { darkColor, accentColor } from "./../../../global-styles/global-styles";
 
 const useStyles = makeStyles((theme) => ({
@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) => ({
       padding: "42px 0 36px 0",
       width: "100%",
       position: "relative",
-      marginBottom: "5rem",
+    //   marginBottom: "2rem",
       [theme.breakpoints.down('lg')]: {
         // border: "1px solid hotpink",
        },
@@ -72,6 +72,9 @@ const useStyles = makeStyles((theme) => ({
         // border: "1px solid red",
         alignSelf: "flex-start",
         padding: "0 1.5rem",
+        [theme.breakpoints.down('xs')]: {
+            alignSelf: "center"
+        },
     },
     tagline: {
         display: "flex",
@@ -112,32 +115,35 @@ const useStyles = makeStyles((theme) => ({
         },
         [theme.breakpoints.down('xs')]: {
             fontSize: 28,
-            alignSelf: "flex-start"
+            alignSelf: "center"
         },
     },
     p: {
         fontSize: "1.125rem",
-        marginBottom: "1rem",
+        marginBottom: "4rem",
         fontWeight: 400,
         color: `${darkColor}`, 
         textAlign: "justify",
         lineHeight: 1.5,
         padding: "0 1.5rem",
+        marginRight: "30rem",
         // border: "1px solid red",
         [theme.breakpoints.down('sm')]: {
             fontSize: 15,
+            marginRight: "0rem",
         },
         [theme.breakpoints.down('xs')]: {
             fontSize: 14,
+            textAlign: "center"
         },
     },
     background: {
         position: "absolute",
         top: 0,
-        right: 0,
+        // right: 0,
         background: "#FAFAFA",
-        left: "50%",
-        marginLeft: -235,
+        right: "50%",
+        marginRight: -235,
         zIndex: 1,
         overflow: "hidden",
         // border: "3px solid orange",
@@ -169,7 +175,7 @@ const useStyles = makeStyles((theme) => ({
             height: 400,
         },
     },
-  
+   
   }));
 
   export {useStyles}
