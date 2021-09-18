@@ -1,13 +1,23 @@
 import React from "react";
-import Jumbotron from "./../UI/Jumbotron/Jumbotron";
-import About from "./About/About";
+import CallToActionBtn from "./../UI/Button/Button"
+import { Typography, } from "@material-ui/core";
+import { useStyles } from "./Home-styles";
 
-const Home = () => {
+const Home = (props) => {
+    const classes = useStyles(props);
+
     return (
-        <React.Fragment>
-            <Jumbotron />
-            <About/>
-        </React.Fragment>
+        <article className={classes.root}>
+            <header className={classes.header}>
+                <Typography component="h1" className={classes.h1}>Henrica's Haven</Typography>
+                <Typography component="h4" className={classes.h4}>Business Management Consulting Services</Typography>
+                <CallToActionBtn className="btn_reg"  ariaLabel="call now" color="inherit" onClick={() => props.history.push("/")} buttonStyle="button">
+                    Call Now
+                </CallToActionBtn>
+            </header>
+            <div className={classes.imgWrapper}> 
+            </div>
+        </article>
     )
 };
 
